@@ -1,3 +1,2 @@
-# CrisJorda.github.io
-
-hola
+Cristina Jordà i Custal is a doctoral researcher at the University of Oslo, Norway. Her work explores the intersection between creativity and technology. Having a technical background as a telecommunications engineer with a master's degree in AI for multimedia, as well as classical music studies, her research focuses on combining AI with music to analyse and create new music.
+Currently, she is a PhD candidate at the Department of Musicology at the University of Oslo
