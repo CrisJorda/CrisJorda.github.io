@@ -1,53 +1,35 @@
-# Hi, I'm Cristina Jordà i Custal 👋
+## About
 
-**Doctoral Researcher · AI & Music · Computational Creativity**
+Cristina Jordà i Custal is a doctoral researcher at the University of Oslo, working at the intersection of creativity, music, and technology.
 
-🎓 PhD Candidate in Musicology at the University of Oslo  
-🇳🇴 Oslo, Norway  
-🎵 Exploring the intersection of artificial intelligence, music, and creativity
+With a background in telecommunications engineering, a master's degree in Deep Learning for Multimedia Processing, and studies in classical music, her work brings together two sides of her world: the technical and practical, and the creative and artistic. She is particularly interested in exploring what emerges when these perspectives meet, and her research in AI and music reflects this interest in bridging technology and artistic practice.
 
----
-
-## About me
-
-I am a doctoral researcher at the University of Oslo, working at the
-intersection of **creativity, music, and technology**.
-
-My background combines **Telecommunications Engineering**, a master's
-degree in **Artificial Intelligence for Multimedia**, and **classical
-music studies**.
-
-My research explores how **artificial intelligence can be used to
-analyse, understand, and create music**, with a particular interest in
-the relationship between computational methods and human creativity.
+She is currently a PhD candidate at the Department of Musicology at the University of Oslo, Norway, where she investigates the use of AI in musical creativity and explores new ways of combining computational techniques with artistic practice.
 
 ---
 
-## 🔬 Research interests
+## Research interests
 
-- Artificial Intelligence & Music
-- Computational Music Analysis
-- Generative AI & Music Creation
-- Computational Creativity
-- Human–AI Collaboration
 - Music Technology
+- Machine Learning
+- Computational Creativity
+- Artificial Intelligence & Music
+- Generative AI & Music Creation
+- Human–AI Collaboration
+- Music Information Retrieval
+- Computer Music
 
 ---
 
-## 🚀 Projects
+## Research
 
-Coming soon...
-
----
-
-## 📚 Research
-
-- [University of Oslo](YOUR_LINK)
-- [Google Scholar](YOUR_LINK)
-- [ORCID](YOUR_LINK)
+- [University of Oslo](https://www.hf.uio.no/imv/english/people/aca/temporary/cristinj/)
+- [Google Scholar](https://scholar.google.es/citations?user=UvTPookAAAAJ&hl=ca&oi=ao)
+- [ORCID](https://orcid.org/0009-0006-8730-9765)
+- [GitHub](https://github.com/CrisJorda)
 
 ---
 
-## 🌐 Find me
+## Contact
 
-[GitHub](YOUR_LINK) · [LinkedIn](YOUR_LINK) · [Personal Website](YOUR_LINK)
+[cristinajorda190@gmail.com](mailto:cristinajorda190@gmail.com) · [LinkedIn](https://www.linkedin.com/in/cristinajordacustal/)
