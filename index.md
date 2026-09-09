@@ -2,7 +2,7 @@
 
 Cristina Jordà i Custal is a doctoral researcher at the University of Oslo, working at the intersection of creativity, music, and technology.
 
-With a background in telecommunications engineering, a master's degree in Deep Learning for Multimedia Processing, and studies in classical music, her work brings together two sides of her world: the technical and practical, and the creative and artistic. She is particularly interested in exploring what emerges when these perspectives meet, and her research in AI and music reflects this interest in bridging technology and artistic practice.
+With a background in telecommunications engineering, a master's degree in Deep Learning for Multimedia Processing, and studies in classical music, her work brings together two sides of her world: the technical and practical, and the creative and artistic. She is particularly interested in exploring what happens when these different views come together, and her research in AI and music shows this curiosity in bringing technology and artistic practice together.
 
 She is currently a PhD candidate at the Department of Musicology at the University of Oslo, Norway, where she investigates the use of AI in musical creativity and explores new ways of combining computational techniques with artistic practice.
 
