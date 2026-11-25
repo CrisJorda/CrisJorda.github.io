@@ -169,7 +169,7 @@ h1 span {
 section {
     position: relative;
     z-index: 1;
-    padding: 5rem var(--pr) 3rem var(--pl)
+    padding: 2rem var(--pr) 3rem var(--pl)
 }
 
 .wrap {
@@ -290,7 +290,6 @@ h2 {
     margin-top: .5rem;
     aspect-ratio: 16/9;
     background: var(--paper);
-    border: 1.5px dashed var(--muted);
     display: grid;
     place-items: center;
     color: var(--muted);
