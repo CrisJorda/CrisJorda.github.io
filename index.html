@@ -1,277 +1,327 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cristina Jordà i Custal</title>
-<meta name="description" content="Doctoral researcher at the University of Oslo working on AI, music and creativity.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap" rel="stylesheet">
-<style>
-:root{
-  --paper:#FDFDFC; --rule:#D3E6F6; --margin:#E4574F;
-  --ink:#1B1D3A; --muted:#4B4E78; --blue:#2F6FB5;
-  --cobalt:#3D3DF2; --rose:#E6397E;
-  --hl-y:#FFF37A; --hl-g:#C6F7C0; --hl-c:#BFF5F2;
-  --m:clamp(1rem,5vw,4.5rem);                 /* x position of the red margin line */
-  --pl:calc(var(--m) + clamp(1.25rem,4vw,3rem));
-  --pr:clamp(1.25rem,6vw,5rem);
-  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
-  --text:"Newsreader",Georgia,"Times New Roman",serif;
-}
-*{box-sizing:border-box}
-@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-body{margin:0;color:var(--ink);font:400 1.2rem/2rem var(--text);background-color:var(--paper);
-  background-image:repeating-linear-gradient(to bottom,transparent 0,transparent calc(2rem - 1px),var(--rule) calc(2rem - 1px),var(--rule) 2rem)}
-body::before{content:"";position:fixed;top:0;bottom:0;left:var(--m);width:2px;background:var(--margin);opacity:.7;pointer-events:none;z-index:0}
-a{color:inherit}
-a:focus-visible,button:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px;border-radius:2px}
-mark{color:inherit;background:linear-gradient(transparent 38%,var(--hl-y) 38%);padding:0 .15em}
-mark.g{background:linear-gradient(transparent 38%,var(--hl-g) 38%)}
-mark.c{background:linear-gradient(transparent 38%,var(--hl-c) 38%)}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cristina Jordà i Custal</title>
+    <meta
+      name="description"
+      content="Doctoral researcher at the University of Oslo working on AI, music and creativity."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-/* Hero */
-.hero{position:relative;min-height:100svh;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);align-items:center;gap:3rem;padding:6rem var(--pr) 4rem var(--pl);overflow:hidden}
-#staff{position:absolute;inset:0;width:100%;height:100%;z-index:0}
-.hero>*:not(canvas){position:relative;z-index:1}
-.topnav{position:absolute;top:0;left:0;right:0;z-index:2;display:flex;gap:2rem;padding:1.75rem var(--pr) 0 var(--pl);font:500 1rem/1.5 var(--display)}
-.topnav a{text-decoration:none}
-.topnav a:hover{text-decoration:underline wavy var(--rose);text-underline-offset:6px}
-h1{margin:0;font:700 clamp(3.4rem,9.5vw,8.5rem)/.9 var(--display);letter-spacing:-.035em}
-h1 span{display:block}
-.lede{margin:2rem 0 .75rem;max-width:26ch;font:italic 400 clamp(1.4rem,2.4vw,2rem)/1.3 var(--text)}
-.role{margin:0;font:500 1rem/1.5 var(--display);color:var(--muted)}
-.portrait{justify-self:center;width:min(100%,340px);aspect-ratio:4/5;border-radius:170px 170px 14px 14px;box-shadow:14px 14px 0 var(--rose);overflow:hidden;background:var(--hl-c)}
-.portrait img{display:block;width:100%;height:100%;object-fit:cover}
+  <body>
+    <header class="hero" id="top">
+      <canvas id="staff" aria-hidden="true"></canvas>
+      <nav class="topnav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div>
+        <h1><span>Cristina</span><span>Jordà i</span><span>Custal</span></h1>
+        <p class="lede">
+          I research how people and AI can make music together.
+        </p>
+        <p class="role">
+          Doctoral researcher, Department of Musicology, University of Oslo
+        </p>
+      </div>
+      <!-- Change the src to the path of your photo in the repository -->
+      <div class="portrait">
+        <img
+          src="images/cristina.jpg"
+          alt="Portrait of Cristina Jordà i Custal"
+        />
+      </div>
+    </header>
 
-/* Sections */
-section{position:relative;z-index:1;padding:5rem var(--pr) 3rem var(--pl)}
-.wrap{max-width:62rem;margin:0 auto 0 0}
-h2{margin:0 0 2rem;padding-bottom:.4rem;max-width:34rem;border-bottom:1.5px solid var(--ink);font:700 clamp(2rem,4.5vw,3.25rem)/1.1 var(--display);letter-spacing:-.02em}
-.sub{margin:2rem 0 .25rem;font:italic 500 1.25rem/2rem var(--text);color:var(--blue)}
-#about p{max-width:38em;margin:0 0 2rem}
-#about p.lead{font-size:clamp(1.5rem,2.8vw,2.1rem);line-height:1.4}
+    <section id="about">
+      <div class="wrap">
+        <h2>About</h2>
+        <p class="lead">
+          I work where <mark>creativity, music and technology</mark> meet.
+        </p>
+        <p>
+          My background is in telecommunications engineering, with a master’s
+          degree in Deep Learning for Multimedia Processing and studies in
+          classical music. My work brings together two sides of my world:
+          <mark class="g">the technical and practical</mark>, and
+          <mark class="c">the creative and artistic</mark>.
+        </p>
+        <p>
+          I am particularly interested in what happens when these different
+          views come together. My research in AI and music comes from that
+          curiosity about bringing technology and artistic practice side by
+          side.
+        </p>
+        <p>
+          I am a PhD candidate at the Department of Musicology at the University
+          of Oslo, Norway. There I investigate the use of AI in musical
+          creativity and explore new ways of combining computational techniques
+          with artistic practice.
+        </p>
+      </div>
+    </section>
 
-.topics{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.75rem 1.5rem}
-.topics li{font:600 clamp(1.3rem,2.8vw,2rem)/1.4 var(--display);letter-spacing:-.01em;padding:0 .3em;background:linear-gradient(transparent 40%,var(--hl-y) 40%)}
-.topics li:nth-child(3n+2){background:linear-gradient(transparent 40%,var(--hl-g) 40%)}
-.topics li:nth-child(3n){background:linear-gradient(transparent 40%,var(--hl-c) 40%)}
+    <section id="interests">
+      <div class="wrap">
+        <h2>Research interests</h2>
+        <ul class="topics">
+          <li>Music technology</li>
+          <li>Machine learning</li>
+          <li>Computational creativity</li>
+          <li>Artificial intelligence and music</li>
+          <li>Generative AI and music creation</li>
+          <li>Human–AI collaboration</li>
+          <li>Music information retrieval</li>
+          <li>Computer music</li>
+        </ul>
+      </div>
+    </section>
 
-/* Notebook with tabs (Research) */
-.nb{--c:#8FE3EA;max-width:56rem}
-.tabs{display:flex;flex-wrap:wrap;gap:.35rem;align-items:flex-end;margin:0;padding:0 0 0 .5rem}
-.tab{border:0;cursor:pointer;padding:.5rem 1.2rem;border-radius:12px 12px 0 0;background:var(--tc);color:var(--ink);font:500 1rem/1.5 var(--display);opacity:.75}
-.tab[aria-selected="true"]{opacity:1;font-weight:700;padding-top:.8rem}
-.page{background:#fff;border:1px solid #D9E4F0;border-top:5px solid var(--c);box-shadow:0 12px 30px rgba(27,29,58,.08);padding:2rem clamp(1.1rem,3vw,2.5rem) 2.5rem}
-.page[hidden]{display:none}
-.page h3{margin:0 0 .25rem;font:700 clamp(1.6rem,3.2vw,2.3rem)/1.15 var(--display);letter-spacing:-.02em}
-.meta{margin:0;font:500 .95rem/1.5 var(--display);color:var(--muted)}
-.page p{max-width:40em;margin:0}
-.video{margin-top:.5rem;aspect-ratio:16/9;background:var(--paper);border:1.5px dashed var(--muted);display:grid;place-items:center;color:var(--muted);font:500 1rem var(--display)}
-.video iframe,.video video{width:100%;height:100%;border:0;display:block}
-.plinks{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.25rem 1.5rem}
-.plinks a{font:600 1rem/2rem var(--display);text-decoration:underline wavy var(--cobalt);text-underline-offset:5px}
-
-/* Profiles */
-.links{list-style:none;margin:0;padding:0;max-width:44rem;border-top:1.5px solid var(--ink)}
-.links a{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:1rem;align-items:baseline;padding:.5rem .5rem;border-bottom:1.5px solid var(--ink);text-decoration:none;background:var(--paper);transition:background .2s}
-.links a:hover{background:var(--hl-g)}
-.links b{font:600 clamp(1.3rem,2.6vw,1.8rem) var(--display);letter-spacing:-.01em}
-.links span{color:var(--muted);font-size:1.05rem}
-
-/* Contact post-it */
-.postit{max-width:30rem;margin:1rem 0 0;padding:2rem 1.75rem 2.25rem;background:#FFF1A0;transform:rotate(-1.5deg);box-shadow:0 14px 24px rgba(27,29,58,.16)}
-.postit .mail{display:block;font:700 clamp(1.25rem,3.4vw,1.9rem)/1.2 var(--display);letter-spacing:-.02em;overflow-wrap:anywhere;text-decoration:underline wavy var(--cobalt) 2px;text-underline-offset:7px}
-.postit p{margin:1.25rem 0 0}
-footer{position:relative;z-index:1;padding:3rem var(--pr) 2rem var(--pl);font:400 .95rem/1.5 var(--display);color:var(--muted)}
-
-@media (max-width:760px){
-  .hero{grid-template-columns:1fr;gap:2.5rem}
-  .portrait{justify-self:start;width:min(70%,260px)}
-  .links a{grid-template-columns:1fr;gap:0}
-}
-</style>
-</head>
-<body>
-
-<header class="hero" id="top">
-  <canvas id="staff" aria-hidden="true"></canvas>
-  <nav class="topnav" aria-label="Main">
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <div>
-    <h1><span>Cristina</span><span>Jordà i</span><span>Custal</span></h1>
-    <p class="lede">I research how people and AI can make music together.</p>
-    <p class="role">Doctoral researcher, Department of Musicology, University of Oslo</p>
-  </div>
-  <!-- Change the src to the path of your photo in the repository -->
-  <div class="portrait"><img src="images/cristina.jpg" alt="Portrait of Cristina Jordà i Custal"></div>
-</header>
-
-<section id="about">
-  <div class="wrap">
-    <h2>About</h2>
-    <p class="lead">I work where <mark>creativity, music and technology</mark> meet.</p>
-    <p>My background is in telecommunications engineering, with a master’s degree in Deep Learning for Multimedia Processing and studies in classical music. My work brings together two sides of my world: <mark class="g">the technical and practical</mark>, and <mark class="c">the creative and artistic</mark>.</p>
-    <p>I am particularly interested in what happens when these different views come together. My research in AI and music comes from that curiosity about bringing technology and artistic practice side by side.</p>
-    <p>I am a PhD candidate at the Department of Musicology at the University of Oslo, Norway. There I investigate the use of AI in musical creativity and explore new ways of combining computational techniques with artistic practice.</p>
-  </div>
-</section>
-
-<section id="interests">
-  <div class="wrap">
-    <h2>Research interests</h2>
-    <ul class="topics">
-      <li>Music technology</li>
-      <li>Machine learning</li>
-      <li>Computational creativity</li>
-      <li>Artificial intelligence and music</li>
-      <li>Generative AI and music creation</li>
-      <li>Human–AI collaboration</li>
-      <li>Music information retrieval</li>
-      <li>Computer music</li>
-    </ul>
-  </div>
-</section>
-
-<section id="research">
-  <div class="wrap">
-    <h2>Research</h2>
-    <!--
-      HOW TO ADD A PROJECT: copy one <button class="tab"> and one <article class="page"> block,
-      keep them in the same order, and pick a tab colour (data-c and --tc must match):
+    <section id="research">
+      <div class="wrap">
+        <h2>Research</h2>
+        <!--
+      other tab colours (data-c and --tc must match):
       cyan #8FE3EA, orange #FFC9A0, pink #F5A6DC, blue #B9C6F5
     -->
-    <div class="nb">
-      <div class="tabs" role="tablist" aria-label="Research projects">
-        <button class="tab" role="tab" id="tab-1" aria-controls="page-1" style="--tc:#8FE3EA" data-c="#8FE3EA">Project one</button>
-        <button class="tab" role="tab" id="tab-2" aria-controls="page-2" style="--tc:#FFC9A0" data-c="#FFC9A0">Project two</button>
+        <div class="nb">
+          <div class="tabs" role="tablist" aria-label="Research projects">
+            <button
+              class="tab"
+              role="tab"
+              id="tab-curve2melody"
+              aria-controls="page-curve2melody"
+              style="--tc: #8fe3ea"
+              data-c="#8FE3EA"
+            >
+              Curve2Melody
+            </button>
+
+            <button
+              class="tab"
+              role="tab"
+              id="tab-improvisation"
+              aria-controls="page-improvisation"
+              style="--tc: #ffc9a0"
+              data-c="#FFC9A0"
+            >
+              Improvisation &amp; creativity
+            </button>
+          </div>
+
+          <article
+            class="page"
+            role="tabpanel"
+            id="page-curve2melody"
+            aria-labelledby="tab-curve2melody"
+          >
+            <h3>Curve2Melody: Sketch-Guided Melody Generation</h3>
+
+            <p class="meta">
+              Cristina Jorda i Custal, Tejaswinee Kelkar, Stefano Fasciani
+            </p>
+
+            <p class="meta">
+              <em>Sound and Music Computing</em> · November 2026
+            </p>
+
+            <p class="sub">Video</p>
+
+            <div class="video">
+              <video controls preload="metadata">
+                <source src="videos/curve2melody-demo.mp4" type="video/mp4" />
+                Your browser does not support the video element.
+                <a href="videos/curve2melody-demo.mp4">Download the video</a>.
+              </video>
+            </div>
+
+            <p class="sub">Abstract</p>
+
+            <p>
+              In this paper, we present Curve2Melody, a multimodal AI generative
+              system that enables the creation of new melodies based on a
+              melodic context and a hand-drawn sketch. Our work builds upon
+              sketch-based melodic generative models, specifically the
+              inpainting system “Draw and Listen”, optimizing its architecture
+              by utilizing a simplified input data structure and conditioning
+              the model on a single context measure.
+            </p>
+
+            <p>
+              We introduce a novel methodology for representing melodic contours
+              using spline curves, encoding them through their derivatives to
+              extract relevant features. The model employs a variational
+              autoencoder with two encoders and three decoders, predicting pitch
+              range, rhythm, and key from the context measure, while pitch is
+              generated from the input sketch.
+            </p>
+
+            <p>
+              To evaluate performance, we designed three experiments using the
+              same pitch-, rhythm-, and context-matching metrics as in the
+              baseline. Results show that our approach improves contour and
+              rhythm matching while achieving tonal consistency, outperforming
+              the baseline model on the same dataset using a model with more
+              than thirty times fewer trainable parameters.
+            </p>
+
+            <p class="sub">Keywords</p>
+
+            <p>
+              Sketch-Based Melody Generation · Melodic Contour · Spline Curves ·
+              Variational Autoencoder
+            </p>
+
+            <p class="sub">Links</p>
+
+            <ul class="plinks">
+              <li>
+                <a
+                  href="https://doi.org/10.5281/zenodo.24022229"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read the publication
+                </a>
+              </li>
+            </ul>
+          </article>
+
+          <article
+            class="page"
+            role="tabpanel"
+            id="page-improvisation"
+            aria-labelledby="tab-improvisation"
+            hidden
+          >
+            <h3>
+              Analyzing music improvisations using unsupervised machine
+              learning: Towards automatically discovering creative cognition
+              principles
+            </h3>
+
+            <p class="meta">Cristina Jorda i Custal</p>
+
+            <p class="meta">
+              <em>Master’s thesis</em> · Universitat Politècnica de Catalunya
+              (UPC), Spain · In collaboration with Kungliga Tekniska Högskolan
+              (KTH), Stockholm · 2024
+            </p>
+
+            <p class="sub">Abstract</p>
+
+            <p>
+              In the field of musical expression, the complex relationship
+              between improvisation and the cognitive processes that underlie
+              creativity presents a fascinating yet challenging puzzle. This
+              thesis explores the connection between musical improvisation and
+              creative cognition among musicians.
+            </p>
+
+            <p>
+              Focusing on the development of robust methods for feature
+              extraction and representation, it uses unsupervised
+              machine-learning techniques to project improvisations from a prime
+              melody into a high-level latent space. The methodology involves
+              iterative analysis employing variational autoencoder models,
+              initially pre-trained with a larger dataset and fine-tuned with a
+              musical-improvisation dataset provided by the Max Planck
+              Institute.
+            </p>
+
+            <p>
+              Evaluation encompasses the Evidence Lower Bound loss metric and
+              dimensionality-reduction techniques including Principal Component
+              Analysis, t-distributed Stochastic Neighbor Embedding,
+              Multidimensional Scaling, and Uniform Manifold Approximation and
+              Projection. The results reveal that experienced musicians exhibit
+              greater divergence from the prime melody compared with amateurs.
+              Moreover, professional musicians’ samples demonstrate more refined
+              clustering and nuanced adjustments between improvisations
+              projected in latent space.
+            </p>
+
+            <p class="sub">Keywords</p>
+
+            <p>
+              Music Improvisation · Unsupervised Machine Learning · Creative
+              Cognition
+            </p>
+
+            <p class="sub">Links</p>
+
+            <ul class="plinks">
+              <li>
+                <a
+                  href="https://upcommons.upc.edu/entities/publication/33ae9227-f95b-4ecd-b8df-f7de668fb811"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read the thesis
+                </a>
+              </li>
+            </ul>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <article class="page" role="tabpanel" id="page-1" aria-labelledby="tab-1">
-        <h3>Title of project one</h3>
-        <p class="meta">Year · Venue or status</p>
-        <p class="sub">Abstract</p>
-        <p>Replace this with your abstract: two or three sentences on the question, the method and what you found.</p>
-        <p class="sub">Video</p>
-        <!-- YouTube: <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Project one video" allowfullscreen></iframe></div>
-             File in the repo: <div class="video"><video controls src="videos/project-one.mp4"></video></div> -->
-        <div class="video">Video goes here</div>
-        <p class="sub">Links</p>
-        <ul class="plinks">
-          <li><a href="#">Paper</a></li>
-          <li><a href="#">Code</a></li>
+    <section id="profiles">
+      <div class="wrap">
+        <h2>Find my work</h2>
+        <ul class="links">
+          <li>
+            <a
+              href="https://www.hf.uio.no/imv/english/people/aca/temporary/cristinj/"
+              ><b>University of Oslo</b><span>Staff page</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://scholar.google.es/citations?user=UvTPookAAAAJ&amp;hl=ca&amp;oi=ao"
+              ><b>Google Scholar</b><span>Publications and citations</span></a
+            >
+          </li>
+          <li>
+            <a href="https://orcid.org/0009-0006-8730-9765"
+              ><b>ORCID</b><span>Research profile</span></a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/CrisJorda"
+              ><b>GitHub</b><span>Code and projects</span></a
+            >
+          </li>
         </ul>
-      </article>
+      </div>
+    </section>
 
-      <article class="page" role="tabpanel" id="page-2" aria-labelledby="tab-2" hidden>
-        <h3>Title of project two</h3>
-        <p class="meta">Year · Venue or status</p>
-        <p class="sub">Abstract</p>
-        <p>Replace this with your abstract: two or three sentences on the question, the method and what you found.</p>
-        <p class="sub">Video</p>
-        <div class="video">Video goes here</div>
-        <p class="sub">Links</p>
-        <ul class="plinks">
-          <li><a href="#">Paper</a></li>
-          <li><a href="#">Code</a></li>
-        </ul>
-      </article>
-    </div>
-  </div>
-</section>
+    <section id="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <div class="postit">
+          <a class="mail" href="mailto:cristinajorda190@gmail.com"
+            >cristinajorda190@gmail.com</a
+          >
+          <p>
+            <a href="https://www.linkedin.com/in/cristinajordacustal/"
+              >Find me on LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
 
-<section id="profiles">
-  <div class="wrap">
-    <h2>Find my work</h2>
-    <ul class="links">
-      <li><a href="https://www.hf.uio.no/imv/english/people/aca/temporary/cristinj/"><b>University of Oslo</b><span>Staff page</span></a></li>
-      <li><a href="https://scholar.google.es/citations?user=UvTPookAAAAJ&amp;hl=ca&amp;oi=ao"><b>Google Scholar</b><span>Publications and citations</span></a></li>
-      <li><a href="https://orcid.org/0009-0006-8730-9765"><b>ORCID</b><span>Research profile</span></a></li>
-      <li><a href="https://github.com/CrisJorda"><b>GitHub</b><span>Code and projects</span></a></li>
-    </ul>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="wrap">
-    <h2>Contact</h2>
-    <div class="postit">
-      <a class="mail" href="mailto:cristinajorda190@gmail.com">cristinajorda190@gmail.com</a>
-      <p><a href="https://www.linkedin.com/in/cristinajordacustal/">Find me on LinkedIn</a></p>
-    </div>
-  </div>
-</section>
-
-<footer>© 2026 Cristina Jordà i Custal</footer>
-
-<script>
-/* Research tabs */
-(function(){
-  var nb=document.querySelector('.nb');
-  var tabs=[].slice.call(nb.querySelectorAll('[role=tab]')),pages=[].slice.call(nb.querySelectorAll('[role=tabpanel]'));
-  function pick(i,focus){
-    tabs.forEach(function(t,j){var on=i===j;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;pages[j].hidden=!on;});
-    nb.style.setProperty('--c',tabs[i].dataset.c);
-    if(focus)tabs[i].focus();
-  }
-  tabs.forEach(function(t,i){
-    t.addEventListener('click',function(){pick(i);});
-    t.addEventListener('keydown',function(e){
-      if(e.key==='ArrowRight')pick((i+1)%tabs.length,true);
-      if(e.key==='ArrowLeft')pick((i+tabs.length-1)%tabs.length,true);
-    });
-  });
-  pick(0);
-})();
-
-/* Staff lines: five undulating lines with notes drifting along them; lines bend toward the pointer. */
-(function(){
-  var c=document.getElementById('staff'),g=c.getContext('2d');
-  var css=getComputedStyle(document.documentElement);
-  var cobalt=css.getPropertyValue('--cobalt').trim(),rose=css.getPropertyValue('--rose').trim();
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var w=0,h=0,px=-9999,py=-9999,gap=24,A=40,notes=[];
-  for(var i=0;i<9;i++)notes.push({u:i/9+Math.random()*.05,l:Math.floor(Math.random()*5)+(Math.random()<.5?.5:0),s:.012+Math.random()*.01});
-  function resize(){
-    var d=Math.min(window.devicePixelRatio||1,2);
-    w=c.clientWidth;h=c.clientHeight;c.width=w*d;c.height=h*d;g.setTransform(d,0,0,d,0,0);
-    gap=Math.max(16,Math.min(34,h*.04));A=Math.max(18,h*.05);
-    if(reduce)draw(0);
-  }
-  function yAt(l,x,t){
-    var base=Math.min(h*.68,h-110)+(l-2)*gap;
-    var y=base+Math.sin(x*.004+t*.6+l*.35)*A+Math.sin(x*.011-t*.4+l*.2)*A*.35;
-    var dx=x-px,dy=py-base;
-    var f=Math.exp(-(dx*dx)/(2*160*160))*Math.exp(-(dy*dy)/(2*220*220));
-    return y+(py-y)*.5*f;
-  }
-  function draw(t){
-    g.clearRect(0,0,w,h);
-    g.strokeStyle=cobalt;g.lineWidth=1.6;g.globalAlpha=.6;
-    for(var l=0;l<5;l++){
-      g.beginPath();
-      for(var x=0;x<=w+8;x+=8){var y=yAt(l,x,t);if(x===0)g.moveTo(x,y);else g.lineTo(x,y);}
-      g.stroke();
-    }
-    g.globalAlpha=.9;g.fillStyle=rose;g.strokeStyle=rose;g.lineWidth=2;
-    notes.forEach(function(n){
-      var x=((n.u+t*n.s)%1)*(w+80)-40,y=yAt(n.l,x,t);
-      g.beginPath();g.ellipse(x,y,9,6.5,-.35,0,Math.PI*2);g.fill();
-      g.beginPath();g.moveTo(x+8,y-2);g.lineTo(x+8,y-36);g.stroke();
-    });
-    g.globalAlpha=1;
-  }
-  function loop(ms){draw(ms/1000);requestAnimationFrame(loop);}
-  window.addEventListener('resize',resize);
-  window.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();px=e.clientX-r.left;py=e.clientY-r.top;});
-  document.addEventListener('pointerleave',function(){px=py=-9999;});
-  resize();
-  if(!reduce)requestAnimationFrame(loop);
-})();
-</script>
-</body>
+    <script src="js/main.js" defer></script>
+  </body>
 </html>
