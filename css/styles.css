@@ -99,7 +99,7 @@ mark.c {
     z-index: 1
 }
 
-.topnav {
+.hero > .topnav {
     position: fixed;
     top: 0;
     left: 0;
