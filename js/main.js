@@ -90,7 +90,7 @@
   }
 
   function yAt(line, x, time) {
-    var base = Math.min(height * 0.68, height - 110) + (line - 2) * gap;
+    var base = Math.min(height * 0.47, height - 110) + (line - 2) * gap;
 
     var y =
       base +

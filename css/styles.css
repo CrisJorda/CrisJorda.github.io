@@ -82,7 +82,7 @@ mark.c {
     grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
     align-items: center;
     gap: 3rem;
-    padding: 6rem var(--pr) 4rem var(--pl);
+    padding: 8.5rem var(--pr) 4rem var(--pl);
     overflow: hidden
 }
 
@@ -100,15 +100,19 @@ mark.c {
 }
 
 .topnav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 10;
     display: flex;
     gap: 2rem;
-    padding: 1.75rem var(--pr) 0 var(--pl);
-    font: 500 1rem/1.5 var(--display)
+    padding: 1.15rem var(--pr) 1.15 var(--pl);
+    font: 500 1rem/1.5 var(--display);
+    background: rgba(253, 253, 252, 0.82);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(211, 230, 246, 0.8);
 }
 
 .topnav a {
@@ -144,8 +148,10 @@ h1 span {
 
 .portrait {
     justify-self: center;
+    align-self: center;
     width: min(100%, 340px);
     aspect-ratio: 4/5;
+    transform: translateY(-2.5rem);
     border-radius: 170px 170px 14px 14px;
     box-shadow: 14px 14px 0 var(--rose);
     overflow: hidden;
@@ -385,11 +391,19 @@ footer {
     .hero {
         grid-template-columns: 1fr;
         gap: 2.5rem;
+        padding-top: 7rem;
     }
 
     .portrait {
         justify-self: start;
         width: min(70%, 260px);
+        transform: translateY(-1rem);
+    }
+
+    .topnav {
+        gap: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     .links a {
