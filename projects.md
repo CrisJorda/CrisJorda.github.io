@@ -6,7 +6,12 @@ Cristina Jordà i Custal, Tejaswinee Kelkar, Stefano Fasciani
 
 *Sound and Music Computing*, 2026
 
-*To be published in November 2026*
+[Read the publication](https://doi.org/10.5281/zenodo.24022229)
+
+<video controls preload="metadata" style="width: 100%; max-width: 720px; height: auto;">
+  <source src="{{ '/assets/videos/curve2melody-demo.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support embedded video.
+</video>
 
 **Abstract**
 In this paper, we present Curve2Melody, a multimodal AI generative system that enables the creation of new melodies based on a melodic context and a hand-drawn sketch. Our work builds upon sketch-based melodic generative models, specifically the inpainting system "Draw and Listen", optimizing its architecture by utilizing a simplified input data structure and conditioning the model on a single context measure. We introduce a novel methodology for representing melodic contours using spline curves, encoding them through their derivatives to extract relevant features. The model employs a variational autoencoder with two encoders and three decoders, predicting pitch range, rhythm, and key from the context measure, while pitch is generated from the input sketch. To evaluate the performance, we design three experiments using the same pitch-, rhythm-, and context-matching metrics as in the baseline. Results show that our approach improves contour and rhythm matching while achieving tonal consistency, outperforming the baseline model on the same dataset using a smaller model with more than thirty times fewer trainable parameters.
