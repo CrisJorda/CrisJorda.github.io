@@ -104,15 +104,14 @@ mark.c {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
-    display: flex;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    padding: 1.15rem var(--pr) 1.15 var(--pl);
+    padding: 1.15rem var(--pr) 1.15rem var(--pl);
     font: 500 1rem/1.5 var(--display);
-    background: rgba(253, 253, 252, 0.82);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(211, 230, 246, 0.8);
+    text-align: center;
+    background: var(--paper);
 }
 
 .topnav a {
@@ -341,7 +340,7 @@ h2 {
 }
 
 .links a:hover {
-    background: var(--hl-g)
+    background: var(--rose)
 }
 
 .links b {
